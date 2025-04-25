@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="imgs/logo.png" alt="Logo Meu E-commerce">
+        <h1>Meu E-commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="carrinho.html" title="Carrinho">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+                <span id="carrinho-contador">0</span>
+            </a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section id="carrossel">
+            <div id="carrossel-items"></div>
+            <button id="prev" onclick="moverCarrossel(-1)">❮</button>
+            <button id="next" onclick="moverCarrossel(1)">❯</button>
+        </section>
+        <section id="produtos">
+            <div id="loading">Carregando produtos...</div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 - Empreendedorismo</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
