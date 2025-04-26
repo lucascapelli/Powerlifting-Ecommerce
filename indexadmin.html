@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - Meu E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin">
+    <header>
+        <h1>Painel de Administração</h1>
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="login.html" title="Sair" aria-label="Sair do painel">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-label="Gerenciamento de produtos">
+            <h2>Lista de Produtos</h2>
+            <div class="admin-container">
+                <label for="search">Buscar Produto:</label>
+                <input type="text" id="search" name="search" placeholder="Pesquisar..." aria-label="Pesquisar produtos">
+                <button type="button" onclick="filtrarProdutos()">Filtrar</button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Barra de Levantamento</td>
+                            <td>R$ 299,90</td>
+                            <td>Equipamento</td>
+                            <td>
+                                <a href="#" aria-label="Editar produto">Editar</a>
+                                <a href="#" aria-label="Excluir produto">Excluir</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Meu E-commerce</p>
+    </footer>
+</body>
+</html>
