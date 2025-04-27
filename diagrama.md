@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A[Index.html<br>Página Inicial] -->|Clicar em Login| B[Login.html<br>Login]
     A -->|Clicar em Carrinho| C[Carrinho.html<br>Carrinho]
@@ -27,3 +28,4 @@ graph TD
     F -->|Menu: Home| A
     F -->|Menu: Carrinho| C
     F -->|Menu: Login| B
+```
